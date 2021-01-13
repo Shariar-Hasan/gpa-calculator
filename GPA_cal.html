@@ -31,19 +31,15 @@
     </style>
 </head>
 <body>
-    <marquee class="text-light my-5 py-4 bg-dark" scrolldelay="1" scrollamount="4" behavior="slide" direction="left">This is a Simple webpage for calculating Your GPA.  Hope You will enjoy it</marquee>
+    <marquee class="text-light my-5 py-4 bg-dark" scrolldelay="1" scrollamount="4" behavior="scroll" direction="left" loop="infinite">This is a Simple webpage for calculating Your GPA.  Hope You will enjoy it</marquee>
     <div class="col-md-4 box bg-secondary" style="">
         <div style="margin: 30px 50px;">
             <h1 class="display-5">GPA Calculator</h1>
-            <form action="#" class="text-center mt-5">
-                <!-- <label class="text-dark mb-2" for="inp">Enter Your GPA:</label> -->
-                <input class="w-75 mx-auto form-control" type="text" id="inp" placeholder="Input GPA here">
-                <div class="mt-3 ">
-                    <button type="submit" class="w-75 mx-auto btn-block btn btn-dark" onclick="gpa()">See Result</button>
-                    <button type="reset" class="btn-block w-75 mx-auto btn btn-light mt-2">Tap to reset</button>
-                </div>
-            </form>
-        
+            <input class="w-75 mx-auto form-control" type="text" id="inp" placeholder="Input GPA here">
+            <div class="mt-3 ">
+                <button type="submit" class="w-75 mx-auto btn-block btn btn-dark" onclick="gpa()">See Result</button>
+                <button type="reset" class="btn-block w-75 mx-auto btn btn-light mt-2">Tap to reset</button>
+            </div>
         </div>
         <div class="text-center mt-5 result">
             <span class="">Result: </span> <p style="text-shadow: 1px 1px 10px rgb(255, 0, 0);"  id="gpa_letter"></p>
